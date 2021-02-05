@@ -1,18 +1,21 @@
-import React, { useRef, useEffect }  from 'react'
+import React, { useRef, useEffect } from 'react'
 import p5 from 'p5'
 import '../css/SketchContainer.css'
 
-const SketchContainer = React.memo((props) => {
+const SketchContainer = (props) => {
     //get ref to the rendered child element (the container)
-    const myRef = useRef()
+    const sketchRef = useRef()
+    const styleRef = useRef()
     //get P5 sketch from 'sketch' prop
-    const sketch = props.sketch
+    const sketchName = props.sketchName
     //use effects to attach the P5 sketch
     useEffect(() => {
         //get the rendered HTML container
-        const el = myRef.current
+        const el = sketchRef.current
         //clear container
         el.innerHTML = ''
+        //load sketch
+        const sketch = require(`../sketches/${sketchName}.js`).default
         //create the sketch in this container
         new p5(sketch, el)
         //clean up - clear container (optional)
@@ -20,9 +23,35 @@ const SketchContainer = React.memo((props) => {
             el.innerHTML = ''
         })
     })
+    //use effect to load styles from public css file
+    useEffect(() => {
+        //get the rendered HTML style element
+        const el = styleRef.current
+        //fetch and load the css
+        async function fetchCSS() {
+            try {
+                //load CSS from file in the public folder
+                const resp = await fetch(`${window.location.origin}/css/sketches/${sketchName}.css`)
+                const css = await resp.text()
+                //set CSS
+                el.innerHTML = css
+            } catch (error) {
+                console.error(error)
+            }
+        }
+        fetchCSS()
+        //clean up - clear container (optional)
+        return (() => {
+            el.innerHTML = ''
+        })
+    })
+
     return (
-        <div ref={myRef} className="sketch-container"></div>
+        <>
+            <div ref={sketchRef} className="sketch-container"></div>
+            <style ref={styleRef}></style>
+        </>
     )
-})
+}
 
 export default SketchContainer

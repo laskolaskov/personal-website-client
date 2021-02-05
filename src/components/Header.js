@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { IndexLinkContainer } from 'react-router-bootstrap'
@@ -13,11 +12,11 @@ function Header() {
                     <IndexLinkContainer to="/">
                         <Nav.Link>Home</Nav.Link>
                     </IndexLinkContainer>
+                    <IndexLinkContainer to="/sketches">
+                        <Nav.Link>Sketches</Nav.Link>
+                    </IndexLinkContainer>
                     <IndexLinkContainer to="/contacts">
                         <Nav.Link>Contacts</Nav.Link>
-                    </IndexLinkContainer>
-                    <IndexLinkContainer to="/test">
-                        <Nav.Link>Test</Nav.Link>
                     </IndexLinkContainer>
                 </Nav>
             </Navbar.Collapse>

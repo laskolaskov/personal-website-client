@@ -1,16 +1,18 @@
 import Home from './pages/Home'
 import Contacts from './pages/Contacts'
-import Test from './pages/Test'
+import Sketches from './pages/Sketches'
 import NotFound from './pages/NotFound'
+
 
 //components
 import Header from './components/Header'
+
 
 //router components
 import {
     Switch,
     Route,
-} from "react-router-dom"
+} from 'react-router-dom'
 
 function App() {
     return (
@@ -20,8 +22,8 @@ function App() {
                 <Route path="/contacts">
                     <Contacts />
                 </Route>
-                <Route path="/test">
-                    <Test />
+                <Route path="/sketches">
+                    <Sketches />
                 </Route>
                 <Route exact path="/">
                     <Home />
