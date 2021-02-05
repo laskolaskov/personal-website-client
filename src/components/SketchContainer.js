@@ -1,5 +1,6 @@
 import React, { useRef, useEffect }  from 'react'
 import p5 from 'p5'
+import '../css/SketchContainer.css'
 
 const SketchContainer = React.memo((props) => {
     //get ref to the rendered child element (the container)
@@ -10,11 +11,13 @@ const SketchContainer = React.memo((props) => {
     useEffect(() => {
         //get the rendered HTML container
         const el = myRef.current
+        //clear container
+        el.innerHTML = ''
         //create the sketch in this container
         new p5(sketch, el)
-        //clean up - clear the container (optional)
+        //clean up - clear container (optional)
         return (() => {
-            el.innerHtml = ''
+            el.innerHTML = ''
         })
     })
     return (
