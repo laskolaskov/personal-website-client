@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/laskolaskov/personal-website-client/static/css/main.158ebc37.chunk.css",
+    "main.js": "/laskolaskov/personal-website-client/static/js/main.dcbcf771.chunk.js",
+    "main.js.map": "/laskolaskov/personal-website-client/static/js/main.dcbcf771.chunk.js.map",
+    "runtime-main.js": "/laskolaskov/personal-website-client/static/js/runtime-main.d8475318.js",
+    "runtime-main.js.map": "/laskolaskov/personal-website-client/static/js/runtime-main.d8475318.js.map",
+    "static/css/2.150d169a.chunk.css": "/laskolaskov/personal-website-client/static/css/2.150d169a.chunk.css",
+    "static/js/2.c20cee46.chunk.js": "/laskolaskov/personal-website-client/static/js/2.c20cee46.chunk.js",
+    "static/js/2.c20cee46.chunk.js.map": "/laskolaskov/personal-website-client/static/js/2.c20cee46.chunk.js.map",
+    "index.html": "/laskolaskov/personal-website-client/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/laskolaskov/personal-website-client/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.158ebc37.chunk.css.map": "/laskolaskov/personal-website-client/static/css/main.158ebc37.chunk.css.map",
+    "static/js/2.c20cee46.chunk.js.LICENSE.txt": "/laskolaskov/personal-website-client/static/js/2.c20cee46.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8475318.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.c20cee46.chunk.js",
+    "static/css/main.158ebc37.chunk.css",
+    "static/js/main.dcbcf771.chunk.js"
+  ]
+}
