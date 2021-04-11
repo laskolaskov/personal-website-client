@@ -1,11 +1,13 @@
 import Home from './pages/Home'
 import Contacts from './pages/Contacts'
 import Sketches from './pages/Sketches'
+import Test from './pages/Test'
 import NotFound from './pages/NotFound'
 
 
 //components
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 
@@ -27,6 +29,9 @@ function App() {
                 <Route path="/sketches">
                     <Sketches />
                 </Route>
+                <Route path="/test">
+                    <Test />
+                </Route>
                 <Route exact path="/">
                     <Home />
                 </Route>
@@ -34,6 +39,7 @@ function App() {
                     <NotFound />
                 </Route>
             </Switch>
+            <Footer />
         </div >
     )
 }

@@ -31,7 +31,8 @@ const SketchContainer = (props) => {
         async function fetchCSS() {
             try {
                 //load CSS from file in the public folder
-                const resp = await fetch(`${window.location.origin}/css/sketches/${sketchName}.css`)
+                const base = window.location.href.split('#')[0]
+                const resp = await fetch(`${base}css/sketches/${sketchName}.css`)
                 const css = await resp.text()
                 //set CSS
                 el.innerHTML = css

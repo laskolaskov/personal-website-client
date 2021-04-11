@@ -134,7 +134,7 @@ const s = (p) => {
                 phase
             }
         }
-        console.log('epicycles count :: ', X.length)
+        //console.log('epicycles count :: ', X.length)
         return X
     }
 
