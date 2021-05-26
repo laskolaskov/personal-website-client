@@ -1,5 +1,7 @@
 {
     "navHome" : "Home",
     "navSketches" : "Sketches",
-    "navContacts" : "Contacts"
+    "navContacts" : "Contacts",
+    "iconsFrom": "from",
+    "iconsBy": "Icons made by"
 }

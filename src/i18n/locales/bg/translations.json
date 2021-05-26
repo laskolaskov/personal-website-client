@@ -1,5 +1,7 @@
 {
     "navHome" : "Начало",
     "navSketches" : "P5 Скици",
-    "navContacts" : "За Контакти"
+    "navContacts" : "За Контакти",
+    "iconsFrom": "от",
+    "iconsBy": "Иконите са създадени от"
 }

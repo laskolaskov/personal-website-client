@@ -76,8 +76,8 @@ export default function LanguageSwitch(props) {
                 <LSBox {...props} >
                     <LSBall {...props} />
                     <LSScenery {...props} >
-                        <img src={bgFlag} alt="error" />
-                        <img src={ukFlag} alt="error" />
+                        <img src={bgFlag} alt="bg" />
+                        <img src={ukFlag} alt="uk" />
                     </LSScenery>
                 </LSBox>
             </label>
