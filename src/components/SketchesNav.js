@@ -15,13 +15,11 @@ const StyledTestLink = styled(TestLink)`
 
 function SketchesNav(props) {
     const {
-        selected,
-        handleSelected,
         match
     } = props
 
     return (
-        <Nav activeKey={selected} onSelect={(key) => handleSelected(key)} className="flex-column">
+        <Nav className="flex-column">
             <IndexLinkContainer to={`${match.url}/fourier`}>
                 <Nav.Link eventKey="fourier">Fourier drawing</Nav.Link>
             </IndexLinkContainer>

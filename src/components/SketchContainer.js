@@ -6,9 +6,9 @@ const SketchContainer = (props) => {
     //get ref to the rendered child element (the container)
     const sketchRef = useRef()
     const styleRef = useRef()
-    //get P5 sketch from 'sketch' prop
-    const sketchName = props.sketchName
-    //use effects to attach the P5 sketch
+    //get P5 sketch name from router
+    const sketchName = props.match.url.split('/')[2]
+    //use effects to load and attach the P5 sketch
     useEffect(() => {
         //get the rendered HTML container
         const el = sketchRef.current

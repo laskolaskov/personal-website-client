@@ -1,15 +1,21 @@
-import { useState } from 'react'
 import SketchesNav from '../components/SketchesNav'
 import SketchContainer from '../components/SketchContainer'
+import { Container, Row, Col } from 'react-bootstrap'
+import { Route } from 'react-router-dom'
 
-function Sketches() {
-    const [selected, handleSelected] = useState('test-sketch')
-
+function Sketches(props) {
     return (
-        <>
-            <SketchesNav selected={selected} handleSelected={handleSelected} />
-            <SketchContainer sketchName={selected} />
-        </>
+        <Container fluid>
+            <Row>
+                <Col xs={2}>
+                    <SketchesNav />
+                </Col>
+                <Col>
+                    <Route path={props.match.url + '/fourier'} component={SketchContainer} />
+                    <Route path={props.match.url + '/test-sketch'} component={SketchContainer} />
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
