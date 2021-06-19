@@ -1,4 +1,5 @@
-.sketch-container canvas {
+canvas {
     margin: auto;
     display: block;
+    padding: 1em;
 }

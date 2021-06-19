@@ -11,6 +11,9 @@ const TestLink = ({ match, children, className }) => (
 
 const StyledTestLink = styled(TestLink)`
     background-color: var(--success);
+    &:hover {
+        border-color: #85a7ca;
+    }
 `
 
 function SketchesNav(props) {
@@ -20,13 +23,13 @@ function SketchesNav(props) {
 
     return (
         <Nav className="flex-column">
-            <IndexLinkContainer to={`${match.url}/fourier`}>
+            <IndexLinkContainer className="ll-border" to={`${match.url}/fourier`}>
                 <Nav.Link eventKey="fourier">Fourier drawing</Nav.Link>
             </IndexLinkContainer>
             <IndexLinkContainer to={`${match.url}/test-sketch`}>
                 <Nav.Link eventKey="test-sketch">Test</Nav.Link>
             </IndexLinkContainer>
-            <StyledTestLink match={match}>test styled link</StyledTestLink>
+            <StyledTestLink className="ll-border" match={match}>test styled link</StyledTestLink>
         </Nav>
     )
 }

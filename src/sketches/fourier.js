@@ -14,6 +14,8 @@ const s = (p) => {
 
     let userDrawing = []
 
+    let primary, secondary
+
 
     p.mouseDragged = () => {
         userDrawing.push(p.createVector(p.mouseX - p.width / 2, p.mouseY - p.height / 2))
@@ -52,6 +54,8 @@ const s = (p) => {
     }
 
     p.draw = () => {
+        primary = getComputedStyle(document.documentElement).getPropertyValue('--primary')
+        secondary = getComputedStyle(document.documentElement).getPropertyValue('--purple')
         p.background(250)
 
         if (!p.mouseIsPressed) {

@@ -3,11 +3,15 @@ const s = (p) => {
     p.setup = () => {
         p.createCanvas(200, 200)
         p.createP('testing p tag')
+
     }
 
     p.draw = () => {
-        p.background(0);
-        p.fill(255);
+        const primary = getComputedStyle(document.documentElement).getPropertyValue('--primary')
+        const secondary = getComputedStyle(document.documentElement).getPropertyValue('--purple')
+        p.background(primary)
+        p.fill(secondary)
+        p.noStroke()
         p.rect(100, 20, 50, 50)
     }
 }

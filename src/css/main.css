@@ -8,3 +8,14 @@
 /* html {
     transition: 0.2s ease;
 } */
+
+:root {
+    --ll-border-width: 0.25em;
+    --ll-spacing: 0.4em;
+}
+
+.ll-border {
+    border: var(--ll-border-width) solid var(--primary);
+    border-radius: var(--ll-border-width);
+}
+
