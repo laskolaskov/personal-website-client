@@ -4,5 +4,6 @@
     "navContacts" : "Contacts",
     "iconsFrom": "from",
     "iconsBy": "Icons made by",
-    "test": "English"
+    "test": "English",
+    "p5Description": "These sketches are cretaed to visualize interesting mathematical algorithms and physical interactions. Made with <p5Url></p5Url> and inspired by the amazing work of <danUrl></danUrl>. If you liked, you can get more at <editorUrl></editorUrl>."
 }

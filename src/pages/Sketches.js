@@ -2,15 +2,16 @@ import SketchesNav from '../components/sketches/SketchesNav'
 import SketchContainer from '../components/sketches/SketchContainer'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Route } from 'react-router-dom'
-import styled from 'styled-components'
-
-const StyledContainer = styled(Container)`
-    margin-top: var(--ll-spacing);
-`
+import SketchPageDescription from '../components/sketches/SketchPageDescription'
 
 function Sketches(props) {
     return (
-        <StyledContainer fluid>
+        <Container className="mt-2" fluid>
+            <Row>
+                <Col>
+                    <SketchPageDescription />
+                </Col>
+            </Row>
             <Row>
                 <Col xs={2}>
                     <SketchesNav />
@@ -22,7 +23,7 @@ function Sketches(props) {
                     <Route component={SketchContainer} />
                 </Col>
             </Row>
-        </StyledContainer>
+        </Container>
     )
 }
 
