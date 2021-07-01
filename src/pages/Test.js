@@ -4,6 +4,7 @@ import styled from 'styled-components'
 //import Fade from 'react-bootstrap/Fade'
 //import Button from 'react-bootstrap/Button'
 //import Collapse from 'react-bootstrap/Collapse'
+import Game from '../components/games/Game'
 
 const StyledDiv = styled.div`
     display: flex;
@@ -71,6 +72,7 @@ export default function Test() {
                 <SpacedBtn variant="outline-dark">Dark</SpacedBtn>
                 <SpacedBtn variant="outline-link">Link</SpacedBtn>
             </StyledDiv>
+            <Game />
 
             {/* <div>
 				<H1 className="text-danger">Contacts</H1>

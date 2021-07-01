@@ -19,6 +19,7 @@ const SketchContainer = (props) => {
                 <Col xs={4}>
                     <SketchDescription value={sketchName} />
                     <SketchDescription value="shit" />
+                    <SketchDescription value="main" />
                 </Col>
                 <Col>
                     <Sketch sketchName={sketchName} />

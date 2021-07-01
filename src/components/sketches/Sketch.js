@@ -23,7 +23,7 @@ const Sketch = (props) => {
             console.error(error)
             el.innerHTML = `No sketch named "${sketchName}" exists !`
         }
-        //clean up - clear container (optional)
+        //clean up - clear container
         return (() => {
             el.innerHTML = ''
         })
@@ -46,7 +46,7 @@ const Sketch = (props) => {
             }
         }
         fetchCSS()
-        //clean up - clear container (optional)
+        //clean up - clear container
         return (() => {
             el.innerHTML = ''
         })
