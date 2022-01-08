@@ -15,5 +15,5 @@ jobs:
         with:
           node-version: '14'
       - name: Run deploy script
-        run: ./.github/scripts.deploy.sh "${{ secrets.GITHUB_TOKEN }}"
+        run: ./.github/scripts/deploy.sh "${{ secrets.GITHUB_TOKEN }}"
         shell: bash
