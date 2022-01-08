@@ -23,7 +23,7 @@ const SketchPageDescription = () => {
                 Header
             </Card.Header>
             <Card.Body>
-                <Card.Title>page description</Card.Title>
+                <Card.Title>page description test</Card.Title>
                 <Card.Text>
                     <Trans
                         i18nKey="p5Description"
