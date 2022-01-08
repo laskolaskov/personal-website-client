@@ -8,17 +8,16 @@ const Sketch = (props) => {
     const styleRef = useRef()
     //get P5 sketch name from router
     const sketchName = props.sketchName
+    const viewCode = props.viewCode
     //use effects to load and attach the P5 sketch
     useEffect(() => {
         //get the rendered HTML container
         const el = sketchRef.current
-        //clear container
-        el.innerHTML = ''
         try {
             //load sketch
             const sketch = require(`../../sketches/${sketchName}.js`).default
-            //create the sketch in this container
-            new p5(sketch, el)
+            //show the sketch or sketch code in the container
+            !viewCode ? new p5(sketch, el) : el.innerHTML = `<pre>${sketch.toString()}</pre>`
         } catch (error) {
             console.error(error)
             el.innerHTML = `No sketch named "${sketchName}" exists !`
@@ -27,7 +26,7 @@ const Sketch = (props) => {
         return (() => {
             el.innerHTML = ''
         })
-    })
+    }, [sketchName, viewCode])
     //use effect to load styles from public css file
     useEffect(() => {
         //get the rendered HTML style element
@@ -50,11 +49,13 @@ const Sketch = (props) => {
         return (() => {
             el.innerHTML = ''
         })
-    })
+    }, [sketchName])
+
+    const classes = `${!viewCode ? 'sketch-container' : null} ll-border`
 
     return (
         <>
-            <div ref={sketchRef} className="sketch-container ll-border"></div>
+            <div ref={sketchRef} className={classes}></div>
             <style ref={styleRef}></style>
         </>
     )
