@@ -9,6 +9,6 @@ jobs:
         with:
           node-version: '14'
       - run: git config --global user.email "laskov.lasko@gmail.com"
-      - run: git config --global user.name "Lasko Laskov"
+      - run: git config --global user.name "laskolaskov"
       - run: npm ci
       - run: npm run deploy

@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.7c211abf.chunk.css",
-    "main.js": "./static/js/main.a672d68a.chunk.js",
-    "main.js.map": "./static/js/main.a672d68a.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.dc2fb15a.js",
-    "runtime-main.js.map": "./static/js/runtime-main.dc2fb15a.js.map",
-    "static/js/2.d3a0c815.chunk.js": "./static/js/2.d3a0c815.chunk.js",
-    "static/js/2.d3a0c815.chunk.js.map": "./static/js/2.d3a0c815.chunk.js.map",
+    "main.css": "./static/css/main.00f712e9.chunk.css",
+    "main.js": "./static/js/main.5a344edb.chunk.js",
+    "main.js.map": "./static/js/main.5a344edb.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e0717091.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e0717091.js.map",
+    "static/js/2.33b6aba3.chunk.js": "./static/js/2.33b6aba3.chunk.js",
+    "static/js/2.33b6aba3.chunk.js.map": "./static/js/2.33b6aba3.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.7c211abf.chunk.css.map": "./static/css/main.7c211abf.chunk.css.map",
-    "static/js/2.d3a0c815.chunk.js.LICENSE.txt": "./static/js/2.d3a0c815.chunk.js.LICENSE.txt",
+    "static/css/main.00f712e9.chunk.css.map": "./static/css/main.00f712e9.chunk.css.map",
+    "static/js/2.33b6aba3.chunk.js.LICENSE.txt": "./static/js/2.33b6aba3.chunk.js.LICENSE.txt",
     "static/media/bulgaria.038501c1.png": "./static/media/bulgaria.038501c1.png",
     "static/media/darkBullSkull.dfadccc3.svg": "./static/media/darkBullSkull.dfadccc3.svg",
+    "static/media/github.f1102180.png": "./static/media/github.f1102180.png",
     "static/media/lightBullSkull.294a9a2f.svg": "./static/media/lightBullSkull.294a9a2f.svg",
+    "static/media/linkedin.70362626.png": "./static/media/linkedin.70362626.png",
     "static/media/moon.0737a6a0.svg": "./static/media/moon.0737a6a0.svg",
+    "static/media/profile-pic.b4919e49.jpg": "./static/media/profile-pic.b4919e49.jpg",
     "static/media/sun.2bcb7e14.svg": "./static/media/sun.2bcb7e14.svg",
     "static/media/united-kingdom.320bf846.png": "./static/media/united-kingdom.320bf846.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc2fb15a.js",
-    "static/js/2.d3a0c815.chunk.js",
-    "static/css/main.7c211abf.chunk.css",
-    "static/js/main.a672d68a.chunk.js"
+    "static/js/runtime-main.e0717091.js",
+    "static/js/2.33b6aba3.chunk.js",
+    "static/css/main.00f712e9.chunk.css",
+    "static/js/main.5a344edb.chunk.js"
   ]
 }
