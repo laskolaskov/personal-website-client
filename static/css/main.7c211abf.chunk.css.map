@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/css/SketchContainer.css"],"names":[],"mappings":"AAAA,yBACI,WAAY,CACZ,aACJ","file":"main.7c211abf.chunk.css","sourcesContent":[".sketch-container canvas {\n    margin: auto;\n    display: block;\n}"]}
