@@ -14,4 +14,4 @@ jobs:
           node-version: '14'
       - run: npm ci
       - run: npm run build
-      - run: node ./node_modules/gh-pages/bin/gh-pages.js -d build -r https://${$GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git > /dev/null
+      - run: node ./node_modules/gh-pages/bin/gh-pages.js -d build -r https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git > /dev/null
