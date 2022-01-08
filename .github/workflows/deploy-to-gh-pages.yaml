@@ -4,14 +4,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: set -e
-      - uses: actions/checkout@v2
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set github credentails
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
-      - uses: actions/setup-node@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm ci
-      - run: npm run build
-      - run: node ./node_modules/gh-pages/bin/gh-pages.js -d build -r https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git > /dev/null
+      - name: Run deploy script
+        run: ./.github/scripts.deploy.sh
+        shell: bash
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
