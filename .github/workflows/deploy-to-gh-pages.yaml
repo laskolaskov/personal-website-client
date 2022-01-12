@@ -3,17 +3,19 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set github credentails
         uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'
       - name: Run deploy script
-        run: ./.github/scripts/deploy.sh "${{ secrets.GITHUB_TOKEN }}"
+        run: ./.github/scripts/deploy.sh
         shell: bash
